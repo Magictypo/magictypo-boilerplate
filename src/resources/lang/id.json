@@ -1,0 +1,25 @@
+{
+  "button": {
+    "add": "Tambahkan",
+    "cancel": "Batal",
+    "submit": "Submit"
+  },
+  "constant": {
+    "gender": {
+      "gender_female": "Laki-laki",
+      "gender_male": "Perempuan"
+    }
+  },
+  "errors": {
+    "required": "Harap diisi"
+  },
+  "form": {
+    "email": "Alamat Surat Elektronik (E-Mail)",
+    "password": "Kata Sandi"
+  },
+  "pages": {
+    "login": {
+      "telephone": "Telepon"
+    }
+  }
+}

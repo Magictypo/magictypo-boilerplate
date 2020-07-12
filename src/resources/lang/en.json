@@ -1,0 +1,25 @@
+{
+  "button": {
+    "add": "add",
+    "cancel": "cancel",
+    "submit": "submit"
+  },
+  "constant": {
+    "gender": {
+      "gender_female": "female",
+      "gender_male": "male"
+    }
+  },
+  "errors": {
+    "required": "is required"
+  },
+  "form": {
+    "email": "Your email address",
+    "password": "create password"
+  },
+  "pages": {
+    "login": {
+      "telephone": "telephone"
+    }
+  }
+}
