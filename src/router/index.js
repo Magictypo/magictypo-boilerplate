@@ -5,6 +5,8 @@ import LoginLayout from '@/components/layout/LoginLayout.vue';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 import Login from '@/views/Login.vue';
+import store from '@/store';
+import axios from 'axios';
 
 Vue.use(VueRouter);
 
@@ -35,6 +37,18 @@ const routes = [
         component: Login,
       },
     ],
+  },
+  {
+    path: '/restrictedpage',
+    beforeEnter: async (to, from, next) => {
+      const accessToken = store.getters['auth/accessToken'];
+      if (!accessToken) {
+        next('/auth/login');
+      }
+      axios.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
+      await store.dispatch('auth/getUser');
+      next();
+    },
   },
 ];
 
