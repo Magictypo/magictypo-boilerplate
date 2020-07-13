@@ -1,4 +1,4 @@
-# test-app-5
+# magictypo-boilerplate
 
 ## Project setup
 ```
